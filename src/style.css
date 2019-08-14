@@ -1,0 +1,134 @@
+body {
+  font-family: 'Titillium Web', sans-serif;
+  width: 1440px;
+  color: #717b8f;
+  background-color: darkgray;
+  margin: 0 auto;
+  
+}
+
+div {
+  box-sizing: border-box;
+}
+
+header {
+  height: 550px;
+  background-color: #87509c;
+  margin: auto;
+  color: #fff;
+}
+
+.container-header {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-top: 55px;
+}
+
+nav {
+  margin-top: 70px;
+}
+
+.menu {
+  margin-right: 40px;
+}
+
+.menu a {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-left: 42px;
+  color: #fff;
+}
+
+.active {
+  background-color: #643a79;
+  border-style: hidden;
+  padding: 10px 30px;
+  position: center;
+  border-radius: 5px;
+}
+.nav-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  padding-top: 130px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.header_button {
+  text-align: center;
+  margin-top: 60px;
+  margin-left: 400px;
+  font-size: 18px;
+  background-color: #eb7d4b;
+  color: #ffffff;
+  border-radius: 4px;
+  display: block;
+  width: 300px;
+  height: 70px;
+  border: hidden;
+}
+
+.title-wrap {
+  text-align: center;
+  padding-top: 115px;
+}
+
+.container-team {
+  height: 910px;
+  background-color: #e7f1f8;
+  color: #717b8f;
+}
+
+.title-wrap h2 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.title-wrap p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.title-wrap img {
+  margin-top: -10px;
+}
+
+.team-container {
+  width: 1100px;
+  margin: 0 auto;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.person-container {
+  width: 260px;
+  text-align: center;
+}
+
+.person-container h3 {
+  font-size: 24px;
+  margin-top: 20px;
+  color:#27283d;
+}
+
+.status {
+  color: #30bae7;
+  margin-top: -5px;
+}
+
+.person-container p {
+  margin-top: 10px;
+}
+
+.social_icons {
+  margin-top: 35px;
+  word-spacing: 10px;
+}

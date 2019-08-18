@@ -1,10 +1,8 @@
 body {
   font-family: 'Titillium Web', sans-serif;
-  width: 1440px;
   color: #717b8f;
-  background-color: darkgray;
-  margin: 0 auto;
-  
+  padding: 0px;
+  margin: 0px;
 }
 
 div {
@@ -13,8 +11,9 @@ div {
 
 header {
   height: 550px;
+  width: 1440px;
   background-color: #87509c;
-  margin: auto;
+  margin: 0px auto;
   color: #fff;
 }
 
@@ -38,17 +37,19 @@ nav {
 .menu a {
   font-size: 16px;
   text-transform: uppercase;
-  margin-left: 42px;
   color: #fff;
+  padding: 10px 20px;
 }
 
-.active {
+.menu a:hover {
+  content: '';
+  color: #fff;
+  text-decoration: none;
   background-color: #643a79;
   border-style: hidden;
-  padding: 10px 30px;
-  position: center;
   border-radius: 5px;
 }
+
 .nav-wrap {
   display: flex;
   justify-content: space-between;
@@ -59,6 +60,8 @@ h1 {
   padding-top: 130px;
   text-align: center;
   font-weight: 600;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .header_button {
@@ -82,14 +85,17 @@ h1 {
 
 .team {
   height: 910px;
+  width: 1440px;
   background-color: #e7f1f8;
   color: #717b8f;
+  margin: 0 auto;
 }
 
 .title-wrap h2 {
   font-size: 40px;
   font-weight: 700;
   letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .title-wrap p {
@@ -118,6 +124,7 @@ h1 {
   font-size: 24px;
   margin-top: 30px;
   color:#27283d;
+  text-transform: uppercase;
 }
 
 .status {
@@ -127,6 +134,8 @@ h1 {
 
 .item-container p {
   margin-top: 10px;
+  max-width: 220px;
+  margin: 0 auto;
 }
 
 .social_icons {
@@ -136,10 +145,19 @@ h1 {
 
 .services {
   height: 750px;
+  width: 1440px;
   background-color: #17c2a4;
   color: #ffffff;
+  margin: 0 auto; 
+}
+.services h4 {
+  text-transform: uppercase;
 }
 
+.service-descr {
+  max-width: 200px;
+  margin: 0 auto;
+}
 .name_service {
   font-size: 24px;
   margin-top: 40px;

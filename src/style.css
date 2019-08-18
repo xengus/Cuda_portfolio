@@ -101,6 +101,8 @@ h1 {
 .title-wrap p {
   font-size: 18px;
   margin-top: 10px;
+  max-width: 680px;
+  margin: 0 auto;
 }
 
 .title-wrap img {
@@ -118,14 +120,15 @@ h1 {
 .item-container {
   width: 260px;
   text-align: center;
+  margin-bottom: 120px;
 }
 
 .item-container h3 {
   font-size: 24px;
   margin-top: 30px;
-  color:#27283d;
+  color:#717b8f;
   text-transform: uppercase;
-}
+ }
 
 .status {
   color: #30bae7;
@@ -136,6 +139,7 @@ h1 {
   margin-top: 10px;
   max-width: 220px;
   margin: 0 auto;
+  
 }
 
 .social_icons {
@@ -171,4 +175,72 @@ h1 {
 
 .crayon_img {
   margin-bottom: -6px;
+}
+
+.skills {
+  height: 655px;
+  width: 1440px;
+  background-color: #ffffff;
+  color: #717b8f;
+  margin: 0 auto;
+}
+
+.skills p {
+    max-width: 600px;
+    text-align: center;
+}
+
+.procents {
+  margin-bottom: -115px;
+  font-size: 50px;
+}
+
+.skill {
+  margin-top: 50px;
+  max-width: 220px;
+}
+
+.portfolio {
+  background-color:#ffdd99;
+  height: 1426px;
+}
+
+.portfolio_buttons {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.portfolio_buttons a{
+  color: #717b8f;
+  background-color: #ebc985;
+  padding: 5px 15px;
+  margin-left: 5px;
+  border-radius: 4px;
+}
+
+.portfolio_buttons a:hover {
+  content: '';
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.portfolio_container {
+  width: 540px;
+  text-align: center;
+  margin-top: -80px;
+}
+
+.portfolio_container h5 {
+  font-size: 24px;
+  color:#717b8f;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.portfolio_container img {
+  
+  margin-top: 50px;
 }

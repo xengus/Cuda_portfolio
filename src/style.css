@@ -128,7 +128,7 @@ h1 {
   margin-top: 30px;
   color:#717b8f;
   text-transform: uppercase;
- }
+}
 
 .status {
   color: #30bae7;
@@ -203,6 +203,8 @@ h1 {
 .portfolio {
   background-color:#ffdd99;
   height: 1426px;
+  width:  1440px;
+  margin: 0 auto;
 }
 
 .portfolio_buttons {
@@ -263,6 +265,8 @@ h1 {
   height: 900px;
   background-color: #d74680;
   color: #ffffff;
+  width:  1440px;
+  margin: 0 auto;
 } 
 
 article {
@@ -305,6 +309,8 @@ q {
   height: 820px;
   background-color: #3c5499; 
   color: #fff;
+  width:  1440px;
+  margin: 0 auto;
 }
 
 form {
@@ -360,6 +366,8 @@ footer {
   background-color: #344b8e;
   text-align: center;
   word-spacing: 20px;
+  width:  1440px;
+  margin: 0 auto;
 }
 
 footer a {

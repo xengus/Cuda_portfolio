@@ -11,7 +11,12 @@ function handler1(event) {
     const target = event.target;
     target.style.backgroundColor = 'cyan';
     target.style.color = 'white';
-    }, 2000)
+    }, 2000);
+  event.preventDefault();  
+}
+
+function get_Random_color () {
+  return '#' + Math.floor(Math.random()*10000000).toString(16);
 }
 
 const button_all = document.querySelector('.page-container') // button везде
@@ -20,7 +25,7 @@ function handler2(event) {
   const target1 = event.target;
   const butt = target1.closest('button');
   if (butt) {
-    target1.style.backgroundColor = 'purple';
+    target1.style.backgroundColor = get_Random_color();
     target1.style.color = 'yellow';
   }
 }

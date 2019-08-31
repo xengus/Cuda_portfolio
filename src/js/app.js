@@ -29,3 +29,14 @@ function handler2(event) {
     target1.style.color = 'yellow';
   }
 }
+
+const anchors_buttons = document.querySelector('.page-container');   //a и buttons везде
+anchors_buttons.addEventListener('click', handler3);
+function handler3 (event) {
+  const target = event.target;
+  const anchors = target.closest ('a');
+  const buttons = target.closest('button');
+  if (anchors||buttons) {
+    target.style.backgroundColor = get_Random_color();
+  }
+}

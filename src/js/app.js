@@ -1,26 +1,26 @@
-let a = document.querySelector('button'); //header (не сработает)
-a.addEventListener('click',handler)
+const buttonHeader = document.querySelector('button'); //header (не сработает)
+buttonHeader.addEventListener('click', handler)
 function handler(event) {
-  a.style.backgroundColor = 'red';
+  buttonHeader.style.backgroundColor = 'red';
 }
 
-let button = document.querySelector('.portfolio_buttons')  //a в портфолио
-button.addEventListener('click', handler1);
+const button_Portfolio = document.querySelector('.portfolio_buttons')  //a в портфолио
+button_Portfolio.addEventListener('click', handler1);
 function handler1(event) {
   setTimeout (function () {
-    let target = event.target;
+    const target = event.target;
     target.style.backgroundColor = 'cyan';
     target.style.color = 'white';
-    }, 4000)
+    }, 2000)
 }
 
-let button1 = document.querySelector('.page-container') // button везде
-button1.addEventListener('click', handler2);
+const button_all = document.querySelector('.page-container') // button везде
+button_all.addEventListener('click', handler2);
 function handler2(event) {
-  let target = event.target;
-  let butt = target.closest('button');
+  const target1 = event.target;
+  const butt = target1.closest('button');
   if (butt) {
-    target.style.backgroundColor = 'purple';
-    target.style.color = 'yellow';
+    target1.style.backgroundColor = 'purple';
+    target1.style.color = 'yellow';
   }
 }

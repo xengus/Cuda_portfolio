@@ -7,12 +7,14 @@ function getRandomColor () {
   return sum;
 }
 
-const portfolioButton = document.querySelector('.portfolio_button');  
-portfolioButton.addEventListener('click', handler);
+const pageContainer = document.querySelector('.page-container');  
+pageContainer.addEventListener('click', handler);
 function handler (event) {
   event.preventDefault();
   const target = event.target;
+  const butt = target.closest('button');
+  const anch = target.closest('a');
   const dataColor = target.dataset.color;
-  (dataColor===target.style.backgroundColor) ? target.style.backgroundColor = getRandomColor(): target.style.backgroundColor = 'pink';
+  (butt||anch) ? (dataColor===target.style.backgroundColor) ? target.style.backgroundColor = getRandomColor(): target.style.backgroundColor = 'pink': false;
 }
  

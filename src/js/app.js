@@ -7,12 +7,12 @@ function getRandomColor () {
   return sum;
 }
 
-const pageContainer = document.querySelector('.portfolio_button');  
-pageContainer.addEventListener('click', handler);
+const portfolioButton = document.querySelector('.portfolio_button');  
+portfolioButton.addEventListener('click', handler);
 function handler (event) {
   event.preventDefault();
   const target = event.target;
-  const data = target.dataset.color;
-  let result = (data===target.style.backgroundColor) ? target.style.backgroundColor = getRandomColor(): target.style.backgroundColor = 'pink';
+  const dataColor = target.dataset.color;
+  (dataColor===target.style.backgroundColor) ? target.style.backgroundColor = getRandomColor(): target.style.backgroundColor = 'pink';
 }
  

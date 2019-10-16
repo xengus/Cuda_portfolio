@@ -1,20 +1,20 @@
 function getRandomColor () {
-  let sum = '#';
-  const string = 'ABCDEF1234567890';
-  while (sum.length < 7) {
-    sum+=string.charAt(Math.floor(Math.random()*16)+1)
+  const string = "ABCDEF0123456789"; 
+  let  s = "#";
+  while (s.length < 7 ) {
+    s += string.charAt(Math.floor((Math.random()*16)+1));
   }
-  return sum;
+  return s;
 }
 
-const pageContainer = document.querySelector('.page-container');  
+const pageContainer = document.querySelector('.page-container');   
 pageContainer.addEventListener('click', handler);
 function handler (event) {
   event.preventDefault();
   const target = event.target;
-  const butt = target.closest('button');
-  const anch = target.closest('a');
-  const dataColor = target.dataset.color;
-  (butt||anch) ? (dataColor===target.style.backgroundColor) ? target.style.backgroundColor = getRandomColor(): target.style.backgroundColor = 'pink': false;
+  const anchors = target.closest ('a');
+  const buttons = target.closest('button');
+  const dat = target.dataset.color;
+  let result = (anchors||buttons) ? target.style.backgroundColor = getRandomColor():false;
+  
 }
- 
